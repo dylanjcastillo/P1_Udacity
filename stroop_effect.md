@@ -1,11 +1,4 @@
-<head>
-	<style type="text/css">
-	.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;border:none;}
-	.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
-	.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
-	.tg .tg-yw4l{vertical-align:top}
-	</style>
-</head>
+# P1: A statistical analysis of the Stroop effect
 
 This report consists of a brief statistical analysis of a data sample from a Stroop task experiment and a significance study of the Stroop effect. The experiment is based on the following premise:
 
@@ -32,34 +25,34 @@ Once the hypothesis were defined, I had to decide on what statistical test I wou
 The next step taken was to obtain some descriptive statistics of the dataset. These statistics were calculated from the observations of time differences between the completion of the task in the incongruent and congruent conditions (\(t_{I} - t_{C}\)).
 
 
-<table class="tg" align="center">
+<table align="center">
   <tr>
-    <th class="tg-031e">Parameter</th>
-    <th class="tg-yw4l">Value</th>
+    <th>Parameter</th>
+    <th>Value</th>
   </tr>
   <tr>
-    <td class="tg-yw4l">Mean</td>
-    <td class="tg-yw4l">7.96</td>
+    <td>Mean</td>
+    <td>7.96</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">Median</td>
-    <td class="tg-yw4l">7.67</td>
+    <td>Median</td>
+    <td>7.67</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">St. Dev.</td>
-    <td class="tg-yw4l">4.86</td>
+    <td>St. Dev.</td>
+    <td>4.86</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">Maximum</td>
-    <td class="tg-yw4l">21.92</td>
+    <td>Maximum</td>
+    <td>21.92</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">Minimum</td>
-    <td class="tg-yw4l">1.95</td>
+    <td>Minimum</td>
+    <td>1.95</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">df</td>
-    <td class="tg-yw4l">23</td>
+    <td>df</td>
+    <td>23</td>
   </tr>
 </table>
 
