@@ -24,8 +24,8 @@ Once the hypothesis were defined, I had to decide on what statistical test I wou
 
 The next step taken was to obtain some descriptive statistics of the dataset. These statistics were calculated from the observations of time differences between the completion of the task in the incongruent and congruent conditions (\(t_{I} - t_{C}\)).
 
-
-<table float="center">
+<div align="center">
+<table>
   <tr>
     <th>Parameter</th>
     <th>Value</th>
@@ -55,18 +55,18 @@ The next step taken was to obtain some descriptive statistics of the dataset. Th
     <td>23</td>
   </tr>
 </table>
-
+</div>
 It is possible to observe that in average the users spent 7.96 more seconds when the colors did not match the words shown (incongruent condition) than in the color-word matching case. The range of this difference went from 1.95 up to 21.92. Also, the standard deviation reported a value of 4.86 seconds.
 
 ### 4. Provide one or two visualizations that show the distribution of the sample data. Write one or two sentences noting what you observe about the plot or plots.
 
 In order to study the distribution of the sample data I decided to plot a histogram and its density curve. Both the histogram and the density function show a unimodal right-skewed distribution of the data. Meaning that onlye one peak is observed in the curve and that most of the values are clustered around small completing time differences and very few of the values are located on the right end of the distribution.
 
-<img src="stroop_effect_files/figure-markdown_github/graph_hist-1.png" style="float: center; margin: auto;" />
+<img src="stroop_effect_files/figure-markdown_github/graph_hist-1.png" align="center"/>
 
 Additionally, I plotted the empirical cumulative distribution of the sample data to make more precise observations. In general terms, this graph gives a similar picture to what was seen in the previous figure. Most of the values are located in the low-end of the completing time differences, 50% of the values are located to the left of 7.6665 seconds mark (median), and the by the 12 seconds mark more than 90% of the values are covered.
 
-<img src="stroop_effect_files/figure-markdown_github/graph_ecdf-1.png" style="float: center; margin: auto;" />
+<img src="stroop_effect_files/figure-markdown_github/graph_ecdf-1.png" align="center"/>
 
 ### 5. Now, perform the statistical test and report your results. What is your confidence level and your critical statistic value? Do you reject the null hypothesis or fail to reject it? Come to a conclusion in terms of the experiment task. Did the results match up with your expectations?
 
