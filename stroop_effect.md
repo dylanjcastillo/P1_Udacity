@@ -25,7 +25,7 @@ Once the hypothesis were defined, I had to decide on what statistical test I wou
 The next step taken was to obtain some descriptive statistics of the dataset. These statistics were calculated from the observations of time differences between the completion of the task in the incongruent and congruent conditions (\(t_{I} - t_{C}\)).
 
 
-<table align="center">
+<table float="center">
   <tr>
     <th>Parameter</th>
     <th>Value</th>
