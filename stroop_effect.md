@@ -21,6 +21,7 @@ Once the hypothesis were defined, I had to decide on what statistical test I wou
 ### 3. Report some descriptive statistics regarding this dataset. Include at least one measure of central tendency and at least one measure of variability.
 
 The next step taken was to obtain some descriptive statistics of the dataset. These statistics were calculated from the observations of time differences between the completion of the task in the incongruent and congruent conditions (\(t_{I} - t_{C}\)).
+<center>
 
 | Parameter | Value |
 |-----------|-------|
@@ -31,6 +32,7 @@ The next step taken was to obtain some descriptive statistics of the dataset. Th
 | Minimum   | 1.95  |
 | df        | 23    |
 
+</center>
 It is possible to observe that in average the users spent 7.96 more seconds when the colors did not match the words shown (incongruent condition) than in the color-word matching case. The range of this difference went from 1.95 up to 21.92. Also, the standard deviation reported a value of 4.86 seconds.
 
 ### 4. Provide one or two visualizations that show the distribution of the sample data. Write one or two sentences noting what you observe about the plot or plots.
