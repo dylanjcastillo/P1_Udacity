@@ -1,6 +1,3 @@
-P1: A statistical analysis of the Stroop effect
-================
-
 This report consists of a brief statistical analysis of a data sample from a Stroop task experiment and a significance study of the Stroop effect. The experiment is based on the following premise:
 
 > In a Stroop task, participants are presented with a list of words, with each word displayed in a color of ink. The participant’s task is to say out loud the color of the ink in which the word is printed. The task has two conditions: a congruent words condition, and an incongruent words condition. In the congruent words condition, the words being displayed are color words whose names match the colors in which they are printed: for example RED, BLUE. In the incongruent words condition, the words displayed are color words whose names do not match the colors in which they are printed: for example PURPLE, ORANGE. In each case, we measure the time it takes to name the ink colors in equally-sized lists. Each participant will go through and record a time from each condition.
@@ -24,7 +21,7 @@ Once the hypothesis were defined, I had to decide on what statistical test I wou
 ### 3. Report some descriptive statistics regarding this dataset. Include at least one measure of central tendency and at least one measure of variability.
 
 The next step taken was to obtain some descriptive statistics of the dataset. These statistics were calculated from the observations of time differences between the completion of the task in the incongruent and congruent conditions (\(t_{I} - t_{C}\)).
-<center>
+
 | Parameter | Value |
 |-----------|-------|
 | Mean      | 7.96  |
@@ -33,7 +30,7 @@ The next step taken was to obtain some descriptive statistics of the dataset. Th
 | Maximum   | 21.92 |
 | Minimum   | 1.95  |
 | df        | 23    |
-</center>
+
 It is possible to observe that in average the users spent 7.96 more seconds when the colors did not match the words shown (incongruent condition) than in the color-word matching case. The range of this difference went from 1.95 up to 21.92. Also, the standard deviation reported a value of 4.86 seconds.
 
 ### 4. Provide one or two visualizations that show the distribution of the sample data. Write one or two sentences noting what you observe about the plot or plots.

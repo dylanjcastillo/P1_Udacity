@@ -1,7 +1,8 @@
 ---
 title: "P1: A statistical analysis of the Stroop effect"
 output: 
-  github_document # Cambiar a md_document
+  md_document:
+    variant: markdown_github # Cambiar a md_document
 ---
 
 ```{r libraries, message=FALSE, warning=FALSE, include=FALSE}
