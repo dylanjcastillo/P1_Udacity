@@ -1,8 +1,9 @@
 ---
 title: "P1: A statistical analysis of the Stroop effect"
+author: "Dylan Castillo"
+date: "July 15, 2016"
 output: 
-  md_document:
-    variant: markdown_github # Cambiar a md_document
+  html_document
 ---
 
 ```{r libraries, message=FALSE, warning=FALSE, include=FALSE}
@@ -27,12 +28,17 @@ In this case the independent variable would be the congruent/incongruent conditi
 
 ### 2. What is an appropriate set of hypotheses for this task? What kind of statistical test do you expect to perform? Justify your choices.
 
-Based on the experimental design and the data provided, I set to find out whether there was a statistically significant increase in the time taken to complete the task when the user faced the incongruent condition compared to the congruent condition's case. With that in mind, I decidede to define the mean of the sampling distribution that I was testing for as the difference in the average completing time in each condition ($\mu_{D} = \mu_{I} - \mu_{C}$). Correspondingly, the null hypothesis was defined as $\mu_{D}$ being zero and the alternative as it being positive:
-<center>
-$H_{0}: \mu_{D} = 0$
+Based on the experimental design and the data provided, I set to find out whether there was a statistically significant increase in the time taken to complete the task when the user faced the incongruent condition compared to the congruent condition's case. With that in mind, I defined the population mean that I was testing for as the difference in the average completing time in each condition:
+\begin{equation}
+\mu_{D} = \mu_{I} - \mu_{C} \nonumber
+\end{equation}
+Where $\mu_{I}$ and $\mu_{C}$ are the population mean of the time to complete the task in the incongruent and congruent conditions respectevely. \newpage
 
-$H_{A}: \mu_{D} > 0$
-</center>
+Correspondingly, the null hypothesis was defined as the population mean of the difference in completing times between the incongruent and congruent condition being zero and the alternative as it being positive. The mathematical representation of both is presented below:
+\begin{align}
+H_{0}: \mu_{D} = 0 \nonumber \\
+H_{A}: \mu_{D} > 0 \nonumber
+\end{align}
 Once the hypothesis were defined, I had to decide on what statistical test I would use to prove which hypothesis was correct. The first obvious step was to define the study as a paired test analisys since I was trying to determine whether the mean of the differences between the time to complete the task for the two conditions differs from zero. Secondly, based on the assumption that the mean of the sampling distribution followed a normal distribution, the two most obvious choices were *z-test* and the *t-test*. Furthermore, in this case the Standard Deviation (SD) of the population was not known and the population size was less than 30 so the *t-test* was picked as the best option among the two.
   
 ### 3. Report some descriptive statistics regarding this dataset. Include at least one measure of central tendency and at least one measure of variability.
@@ -63,23 +69,23 @@ It is possible to observe that in average the users spent `r round(mean_str, 2)`
 
 In order to study the distribution of the sample data I decided to plot a histogram and its density curve. Both the histogram and the density function show a unimodal right-skewed distribution of the data. Meaning that onlye one peak is observed in the curve and that most of the values are clustered around small completing time differences and very few of the values are located on the right end of the distribution.
 
-```{r graph_hist, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.height=4.5, fig.width=4.5}
+```{r graph_hist, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.height=4, fig.width=4}
 ggplot(data_str, aes(x = Diff)) + 
   geom_histogram(aes(y = ..density..), binwidth = 1, fill = "#29526D") +
   geom_density(alpha = .2, fill = "#DCF1A1") + theme_pander() +
   xlab("Completing time difference") +
   ylab("Density") +
-  ggtitle("Histogram and density curve")
+  ggtitle("Histogram and Density curve")
 ```
 
 Additionally, I plotted the empirical cumulative distribution of the sample data to make more precise observations. In general terms, this graph gives a similar picture to what was seen in the previous figure. Most of the values are located in the low-end of the completing time differences, 50% of the values are located to the left of `r med_str` seconds mark (median), and the by the 12 seconds mark more than 90% of the values are covered.
 
-```{r graph_ecdf, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.height=4.5, fig.width=4.5}
+```{r graph_ecdf, echo=FALSE, message=FALSE, warning=FALSE, fig.align='center', fig.height=4, fig.width=4}
 ggplot(data_str, aes(x = Diff)) + stat_ecdf(col = "#29526D") +
   theme_pander() +
   xlab("Completing time difference") +
   ylab("Cumulative percent") +
-  ggtitle("Empirical cumulative distribution function")
+  ggtitle("Empirical Cumulative Distribution")
 ```
 
 ### 5. Now, perform the statistical test and report your results. What is your confidence level and your critical statistic value? Do you reject the null hypothesis or fail to reject it? Come to a conclusion in terms of the experiment task. Did the results match up with your expectations?
@@ -104,9 +110,9 @@ Finally, the *t-test* was performed. The following procedure was used:
 3. Compare the values obtained in step 2 and reject the null hypothesis if the *t-test* statistic is larger than the *t-critical* value
 
 In this case, the null hypothesis was rejected for a confidence level of $\alpha=0.01$ based on the results obtained:
-<center>
-$t(23) = `r round(t_stat, 2)`, p < .01, one-tailed$
-</center>
+\begin{align}
+t(23) = `r round(t_stat, 2)`, p < .01, one-tailed \nonumber
+\end{align}
 
 That result signifies that there is actually an statistically significant effect of the congruent/incongruent condition on the time taken to complete the task. This conclusion is in line with what I was expecting, based on my own experience taking the test and the exploratory analysis of the data. 
 
